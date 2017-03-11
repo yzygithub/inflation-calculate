@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/inflation.js"></script>
+	<style type="text/css">
+		#border {
+			border:5px double;
+			width: 150px;
+			height: 270px;
+			padding: 15px;
+		}
+
+		.p {
+			background-color: black;
+			color: white;
+			margin-bottom: 5px;
+		}
+
+		.input {
+			width:100px;
+			margin-bottom: 5px;
+		}
+	</style>
+	<title>通胀计算</title>
+</head>
+<body>
+	<div id="border">
+		<p class="p">
+			years:
+		</p>
+		<input type="text" class="input" name="years" id="years" />
+
+		<p class="p">
+			inflation:
+		</p>
+		<input type="text" class="input" name="inflation" id="inflation" />
+
+		<button onclick="inflationCalculate()">提交</button>
+
+		<p class="p" id="multiple">
+			multiple:
+		</p>
+		<p class="p" id="sum">
+			sum:
+		</p>
+
+		<button onclick="clearOutput()">清除结果</button>
+	</div>
+</body>
+</html>
